@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Página principal</title>
+    <meta charset="utf-8">
+
+
+</head>
+
+<body>
+
+    <h2>Produtos</h2>
+
+    <table border="2" width="100%">
+        <!--Table: Tabela; border: tamanho da borda; width: largura da tabela (somente o número é mostrado a largura em pixel, caso colocarmos em porcentagem, a tabela irá ocupar a quantidade referente em porcentagem da tela do seu navegador); ) -->
+        <tr> <!--Table Row (Linha da tabela)-->
+            <th> Código </th> <!--th: Table Header (Cabeçalho da tabela (Pode ser usado como um título da lista))-->
+            <th> Produto </th>
+            <th> Preço </th>
+        </tr>
+
+        <tr>
+            <td>001</td> <!--td: Table Data (dados da tabela/células da tabela)-->
+            <td>Notebook</td>
+            <td>R$ 2500,99</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td><a href="https://google.com">Clique</a></td>
+            <td>R$ 999,99</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Desconto</td>
+            <!--Rowspan é usado para indicar quantas linhas para baixo a célula irá ocupar a -->
+            <td colspan="2">Cupom1 -R$10,00</td>
+            <!--colspan é usado para indicar quantas colunas para o lado a célula irá ocupar -->
+        </tr>
+
+        <tr>
+            <td colspan="2">Cupom2 -R$12,00</td>
+        </tr>
+
+        <tr>
+            <td>Total: </td>
+            <td colspan="2"><b>R$ 3.478,98</b></td>
+        </tr>
+
+    </table>
+    <img src="C:\Users\rodri\OneDrive\Área de Trabalho\Rodrigo\Programação Web\HTML\Aula Imagens\Imagens/mustang.jpg"
+        width="100%">
+
+</body>
+
+</html>
