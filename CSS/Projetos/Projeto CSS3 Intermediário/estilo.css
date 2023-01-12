@@ -1,0 +1,33 @@
+/*Modelo de caixa*/
+
+.conteudo {
+    border: 1px solid red;
+    /*padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;*/
+
+    /*padding: 20px 20px 20px 20px; Ordem: top, right, bottom, left*/
+
+    padding: 20px; /*Espaçamento de 20px em todas as direções*/
+
+    margin: 10px; /*Margin é a mesma regra do padding*/
+
+    width: 150px;
+}
+
+.conteudo2 {
+    border: 1px solid red;
+    margin: 50px;
+    width: 150px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+#noticia {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid gray ;
+}
