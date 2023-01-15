@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Meu site</title>
+    <meta charset="utf-8">
+    
+    <style type="text/css">
+
+    #principal {
+        border: 5px solid red;
+        background-color: green;
+    }
+
+    /*Se usarmos elemento flutuante dentro de outra div, o elemento flutuante sai da div, para que ele continue dentro da div devemos utilizar o comando clear dentro de uma última div para que o float interaja com a div principal ou também podemos colocar um texto no final da div para que ESTIQUE o background já que os quadrados em float não empurram a div, pois flutuam sem interferir no fluxo da página.*/
+
+    .conteudo{
+        background: blue;
+        border: 1px solid gray;
+        width: 200px;
+        height: 200px; 
+        float: right; 
+        margin: 10px;      
+    }
+
+    /*Um flaot não sobrepõe outro float, então caso colocarmos left para 3 quadrados, todos vão ficar lado a lado (seguindo a ordem do primeiro para o ultimo)*/
+
+    /*.conteudo1{
+        background: red;
+        border: 1px solid gray;
+        width: 200px;
+        height: 250px;
+        float: left;
+        margin: 10px;
+    }*/
+
+    /*.conteudo-zero{
+        background: red;
+        border: 1px solid gray;
+        width: 200px;
+        height: 200px;
+        margin: 10px;      
+    }*/
+    
+    .clear {
+        clear: both; /*Ao usamros o clear left estamos limpando o fluxo flutuante a esquerda e o texto segue para a linha de baixo e não em volta do float que está na esquerda da página (também podemos usar "both" que limpa o fluxo tanto na esquerda quanto na direita.*/
+    }
+
+ /* Float: Faz com que o conteúdo flutue na direção indicada sem seguir o fluxo normal das linhas e colunas*/
+
+    </style>
+
+</head>
+    <body>
+
+        <div id="principal">
+
+            <div class="conteudo">
+                Conteúdo 1
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 2
+            </div>
+
+            <div class="conteudo">
+                Conteúdo 3
+            </div>
+
+            <!--div class="clear"></div-->
+
+            
+        <p class="clear">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos eligendi quod nam natus velit iste, consectetur ipsa nobis, alias saepe iusto ad adipisci dolores maiores quisquam doloribus laborum deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quas facilis dolorem facere, voluptatibus veritatis inventore odio autem hic sunt enim neque ratione sit impedit aperiam explicabo adipisci minus id? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quasi perferendis adipisci ex minus harum itaque soluta laborum culpa! Aliquid iusto nostrum ex ullam veniam ad quod hic sapiente? Vel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nemo voluptas fugiat impedit aperiam debitis quibusdam. Vitae cum id accusamus natus quis laudantium, sapiente pariatur totam ipsa minima sunt repudiandae.
+            </p>
+
+        </div>
+
+        
+    </body>
+
+</html>
