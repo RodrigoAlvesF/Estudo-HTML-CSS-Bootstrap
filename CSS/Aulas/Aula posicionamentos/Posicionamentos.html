@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Posicionamentos (static, relative, absolute e fixed)</title>
+    <style type="text/css"> 
+
+        body{
+            background: #007fc7;
+
+        }
+
+        #container {
+            background: #FFF;
+            width: 800px;
+            margin: 10px auto; /*Ao colocarmos AUTO esquerda e direita, a margem sempre fica centralizada.*/
+            padding: 10px;
+            position: relative;
+        }
+
+/*STATIC: Posicionamento Static é o posicionamento padrão de todos elementos
+Ao usarmos RELATIVE, movemos o elemento dentro do conteiner livremente sem interferir o que está escrito por padrão.*/
+
+        h1 {
+            
+        }
+
+        p {
+            width: 300px;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            top: -150px;
+            left: 400px;
+            /*top, right, bottom e left*/
+        }
+
+        .absolute {
+            border: 1px solid red;
+            position: absolute;
+            top: 80px;
+            background: #F2F2F2;
+            right: 80px;
+        }
+
+        .fixed {
+            border: 1px solid red;
+            position: fixed;
+            background: #F2F2F2;
+            bottom: 0px;
+            right: 0px;
+            margin: 0px;
+        }
+
+/* ABSOLUTE: Quando definimos posição absoluta, o elemento sai do fluxo normal do documento e não afeta a posição dos outros elementos da página, se comportando como se a caixa do posicionamento absolute não existisse.
+Absolute NÃO é movido proporcional em elemento padrão (static)
+
+FIXED: Elemento fixed fica fixo ao rolar a página, sempre aparecendo no local onde posicionamos.*/
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="container">
+        
+        <h1>Posicionamentos</h1>
+
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p class="fixed">
+            P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+
+        <p>
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo sint adipisci! Cumque sapiente fugiat libero aliquid, ea architecto facilis voluptates animi ipsam eaque dolorum iusto hic. Maxime, ipsum nostrum?
+        </p>
+        
+
+    </div>
+   
+</body>
+
+</html>
