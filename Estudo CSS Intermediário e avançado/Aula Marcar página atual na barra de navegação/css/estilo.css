@@ -30,10 +30,18 @@ ul a {
     text-decoration: none;
     text-indent: 40px; /*Usado para empurrar o texto*/
     line-height: 40px; /*Colocamos a altura do quadrado em 40, então colocamos igual para ficar centralizado. */
-    background: url(imagens/menu.png) no-repeat left;
+    background: url(../imagens/menu.png) no-repeat left;
 }
 
 ul a:hover {
-    background: url(imagens/menu.png) no-repeat right;
+    background: url(../imagens/menu.png) no-repeat right;
     color: white;
+}
+
+#Home #Navegação .Home a, 
+#Sobre #Navegação .Sobre a   
+{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
 }

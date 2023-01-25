@@ -1,0 +1,44 @@
+/*Barra de navegação horizontal*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 720px;
+    background: #159cb0 url(../img/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+/*Devemos usar o float em ambos pois LI está em UL, porém UL não estava com elemento flutuante antes de colocarmos o float nela também, já que o float altera o fluxo do documento*/
+
+ul li {
+     /*Podemos utilizar o inline e o float para horizontar*/
+    float: left;
+}
+
+ul a {
+    text-decoration: none;
+    padding: 0 2em;
+    display: block;
+    line-height: 2.2em;
+    font-size: 18px;
+    color: white;
+    background: url(../img/divisor.png) repeat-y;
+}
+
+ul .primeiro a {
+    background: none;
+}
+
+ul a:hover {
+    color: #085662;
+    background: #44cade;
+}
+
+#Home #Navegação .Home a, 
+#Sobre #Navegação .Sobre a,
+#Serviços #Navegação .Serviços a    
+{
+    color: #085662;
+    background: #44cade;
+}
