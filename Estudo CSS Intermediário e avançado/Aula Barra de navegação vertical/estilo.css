@@ -1,0 +1,39 @@
+/*Barra de navegação vertical*/
+
+/*
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}*/
+
+/*Para voltar de pasta, usamos "../ no inicio"*/
+/*li {
+    padding: 5px 20px;
+    background: url(imagens/seta.png) no-repeat left; 
+}*/
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-indent: 40px; /*Usado para empurrar o texto*/
+    line-height: 40px; /*Colocamos a altura do quadrado em 40, então colocamos igual para ficar centralizado. */
+    background: url(imagens/menu.png) no-repeat left;
+}
+
+ul a:hover {
+    background: url(imagens/menu.png) no-repeat right;
+    color: white;
+}
