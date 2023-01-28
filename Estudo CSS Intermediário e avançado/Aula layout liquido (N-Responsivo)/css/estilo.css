@@ -1,0 +1,76 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+#Container {
+    width: 85%; /*720px*/
+    margin: 0 auto; /*Auto serve para centralizar*/
+    background: #fff;
+    min-width: 720px; /*Ao usarmos largura mínima, quando tentamos diminuir mais que o minimo ele não altera a página, max funciona de forma contrária*/
+    max-width: 960px;
+    /*Também funciona para altura*/
+}
+
+#Marca {
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+#Navegação {
+    border: 1px solid red;
+    width: 23%; /*se somarmos o conteúdo e a navegação dá width de 700px, e sobram 20px de espaço entre eles.
+    Para usarmos porcentagem proporcional, 180 equivale a 25%*/
+    float: left; /*Para a navegação ficar a esquerda*/
+    padding-top: 20px;
+    padding-bottom: 20px; /*Padding usado para espaçar texto da margin.*/
+    background: #d1d1d1;
+}
+
+#Conteúdo {
+    border: 1px solid red;
+    width: 75%; /*520px -> 75%*/ 
+    float: right;
+}
+
+/*Tamanho para conteudo principal e secundario equivale a 500px*/
+
+#Conteúdo-principal {
+    width: 63%; /*320px equivale 64%*/
+    float: left;
+}
+
+#Conteúdo-secundário {
+    width: 34%; /*180px equivale 36%*/
+    float: right;
+    background: #d1d1d1;
+}
+
+#Conteúdo-secundário h1,
+#Conteúdo-secundário h2,
+#Conteúdo-secundário h3,
+#Conteúdo-secundário p {
+    padding-left: 20px;
+    padding-right: 20px; /*Padding usado para espaçar texto da margin.*/
+}
+
+/*A soma do width do conteúdo principal e do secunário dá 500, sobrando 20px do width de conteúdo que servirá de espaçamento.*/
+
+
+
+#Navegação ul {
+    list-style: none;
+}
+
+#Navegação li a{
+    text-decoration: none;
+}
+
+#Rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+    text-align: center;
+}
