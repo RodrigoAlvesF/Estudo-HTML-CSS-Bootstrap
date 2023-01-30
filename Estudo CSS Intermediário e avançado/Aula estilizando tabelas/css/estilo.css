@@ -1,0 +1,35 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 600px; /*largura da tabela*/
+    border-collapse: collapse; /*Collapse faz com que todos os countainer da tabela se juntem como as celulas do excel, Separate é o padrão.*/
+}
+
+/*Como vamos usar a mesma formatação, usamos os 2 juntos separados por virgulas*/
+th, td {
+    padding: 7px; /*Tamanho da celula*/
+}
+
+th {
+    text-transform: uppercase; /*Deixar todas as letras maiúsculas*/
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%; /*90% do tamanho original */
+    letter-spacing: 0.1em; /*Espaçamento entre letras*/
+}
+
+tr.alternado {
+    background-color: #efefef;
+} /*Usamos para cada linha ficar de cor diferente*/
+
+
+tr:hover { /*Usado para ficar com cor diferente ao passarmos o mouse*/
+    background-color: #c3e6e5;
+}
+
+.numero {
+    text-align: right;
+}

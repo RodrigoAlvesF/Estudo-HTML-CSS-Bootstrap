@@ -1,0 +1,88 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+#Container {
+    
+    width: 960px; /*Para coluna falsa devemos utilizar layout fixo*/
+    margin: 0 auto; /*Auto serve para centralizar*/
+    background: #fff url(../img/coluna.png) repeat-y left top;
+    min-width: 790px; /*Ao usarmos largura mínima, quando tentamos diminuir mais que o minimo ele não altera a página, max funciona de forma contrária*/
+    max-width: 1100px;
+    /*Também funciona para altura*/
+}
+
+#Marca {
+    height: 180px;
+    width: 100%;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 180px;
+    background: #225992 url(../img/cabecalho2.jpg) no-repeat center;
+    
+}
+
+#Navegação {
+    width: 24%; /*se somarmos o conteúdo e a navegação dá width de 700px, e sobram 20px de espaço entre eles.
+    Para usarmos porcentagem proporcional, 180 equivale a 25%*/
+    float: left; /*Para a navegação ficar a esquerda*/
+    padding-top: 20px;
+    padding-bottom: 20px; /*Padding usado para espaçar texto da margin.*/
+}
+
+#Conteúdo {
+    width: 75%; /*520px -> 75%*/ 
+    float: right;
+}
+
+/*Tamanho para conteudo principal e secundario equivale a 500px*/
+
+#Conteúdo-principal {
+    width: 63%; /*320px equivale 64%*/
+    float: left;
+}
+
+img.img-noticia {
+    width: 94%;
+    padding: 2%;
+    max-width: 600px;
+    display: block;
+    margin: auto;  
+}
+/*Estamos criando uma formatação de imagens que carregarem a classe citada
+A combinação de display block e margin auto serve para centralizar no container de conteúdo.*/
+
+#Conteúdo-secundário {
+    width: 34%; /*180px equivale 36%*/
+    float: right;
+    background: #d1d1d1;
+}
+
+#Conteúdo-secundário h1,
+#Conteúdo-secundário h2,
+#Conteúdo-secundário h3,
+#Conteúdo-secundário p {
+    padding-left: 20px;
+    padding-right: 20px; /*Padding usado para espaçar texto da margin.*/
+}
+
+/*A soma do width do conteúdo principal e do secunário dá 500, sobrando 20px do width de conteúdo que servirá de espaçamento.*/
+
+
+
+#Navegação ul {
+    list-style: none;
+}
+
+#Navegação li a{
+    text-decoration: none;
+}
+
+#Rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+    text-align: center;
+    
+}
