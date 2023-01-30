@@ -1,0 +1,59 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #2800db, #f68a00) no-repeat;
+    /*background: #643d87 url(../img/fundo.jpg) no-repeat top center;*/
+    clear: both;
+    background-attachment: fixed; /*Para preenchermos toda a tela com o background escolhido*/
+}
+
+#container {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; /*Prefixos são usados para navegadores mais antigos*/
+    border-radius: 10px; /*Usado para arredondar borda*/
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center; /*para centralizar a imagem*/
+}
+
+#container img { /*Formatando imagens dentro do container*/
+    width: 120px; /*reduzir tamanho*/
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input {
+    height: 40px; /*Tamanho da barra de texto*/
+    width: 80%; /*largura proporcional ao container*/
+    font-size: 18px;
+    margin-bottom: 10px; /*espaçamento entre caixas*/
+    background-color: white;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px; /*para centralizar o icone da barra de texto*/
+}
+
+input.email {
+    background-image: url(../img/icone-usuario.png);
+}
+
+input.senha {
+    background-image: url(../img/icone-cadeado.png);
+}
+
+input.submit {
+    color: white; /*Texto branco*/
+    background-color: #f79300; /*Fundo laranja*/
+    border: 2px solid #db7d00; /*borda laranja escuro*/
+    padding: 5px 20px;
+    height: 45px;
+    width: 90%;
+    background: linear-gradient(to bottom, #faa600, #f68a00); /*Comando para aplicar degradê da primeira cor para a segunda*/
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+} /*Obs: prefixos são usados para navegadores antigos não quebrarem*/

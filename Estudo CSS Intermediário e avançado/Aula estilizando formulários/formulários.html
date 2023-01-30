@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Estilizando Formulários </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+
+<body>
+
+    <h2>Estilizando Formulários</h2>
+
+    <form>
+        <fieldset> <!--Utilizado para agrupar dados relacionados-->
+            <legend>Detalhes de contato</legend> <!--Serve para titulo do fieldset-->
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome"> <!--Ao usarmos o "id" igual o "for", estamos vinculando ambos entre si-->
+            </div>
+
+            <div>
+                <label for="email">email:</label>
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="url">url:</label>
+                <input type="text" name="url" id="url">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentários</legend>
+
+            <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="60" rows="8"></textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+
+            <legend>Lembrar de mim</legend>
+            <div>
+                <label for="lembrar">
+                    <input class="radio" type="radio" name="lembrar" id="Sim">Sim
+                </label>
+            </div>
+
+            <div>
+                <label for="lembrar">
+                    <input class="radio" type="radio" name="lembrar" id="Não">Não
+                </label>
+            </div>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

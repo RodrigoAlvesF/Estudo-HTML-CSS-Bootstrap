@@ -30,6 +30,6 @@ tr:hover { /*Usado para ficar com cor diferente ao passarmos o mouse*/
     background-color: #c3e6e5;
 }
 
-.numero {
+.numero { /*Clase para mover para a direita*/
     text-align: right;
 }
