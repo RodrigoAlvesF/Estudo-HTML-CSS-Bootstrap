@@ -1,0 +1,8 @@
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: rgba(1, 1, 1, 50%); /*Podemos colocar a transparencia logo depois das cores como visto no (50%)*/
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px 90px; /*Comando para arredondar cantos (se aumentarmos muito o px, conseguimos deixa-lo circular caso indicarmos 1 única medida*/   
+}

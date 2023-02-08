@@ -1,0 +1,20 @@
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: #d3e451;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px 90px; /*Comando para arredondar cantos (se aumentarmos muito o px, conseguimos deixa-lo circular caso indicarmos 1 única medida*/   
+}
+
+/*Quando usamos o padding, a altura e a largua ganha em pixels também, pois na forma padrão tudo é somado, ou seja, quando indicamos width e height em 300px porém temos um padding de 50px, as medidas serão maiores que 300px, para mantermos o width e height independente do padding, devemos usar o comando "box-sizing: border-box;"*/
+
+#caixa2{
+    width: 300px;
+    height: 300px;
+    background: #d3e451;
+    padding: 40px;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
