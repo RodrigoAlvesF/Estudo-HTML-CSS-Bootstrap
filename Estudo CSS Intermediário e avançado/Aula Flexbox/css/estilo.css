@@ -1,0 +1,26 @@
+#conteudo {
+    background: #dcdcdc;
+    height: 600px;
+    display: flex;
+    
+    /*row|row-revese|column|column-reverse*/
+    flex-direction: row; /*Usado para formatar que tipo de flex usaremos*/
+
+    /*nowrap|wrap|wrap-reverse*/
+    flex-wrap: nowrap;/*Caso não indicarmos, ele diminui o tamanho do item (esmaga) quando diminuimos a aba sem quebrar a linha, caso colocarmos WRAP, ele quebra a linha e mantem o tamanho*/
+
+    /*flex-start|flex-end|center|space-between|space-around*/
+    justify-content: space-between;/*Usamo para alinhamentos horizontal*/
+
+    /*scretch|center|flex-start|flex-end|baseline*/
+    align-items: stretch; /*Usamos para alinhamento vertical*/
+
+}
+
+.item {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background: white;
+    border: 1px solid gray;
+}
