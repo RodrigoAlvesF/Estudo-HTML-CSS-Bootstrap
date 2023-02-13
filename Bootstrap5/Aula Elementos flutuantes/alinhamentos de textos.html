@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    
+    <!--Viewport: toda a área visualizável-->
+    <!--"Nosso viewport vai ocupar a largura do dispositivo"-->
+    <!--Initial-scale: Definir escala de zoom padrão-->
+    <!--shrink-to-fit: Encolher para caber-->
+    <!--Tags necessárias para uso do bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <title>Bootstrap - Alinhamento de textos</title>
+
+    <!--Bootstrap CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/estilo.css" rel="stylesheet">
+  </head>
+
+  <body style="margin-bottom: 200px;padding: 16px;">
+
+
+   <!-- 
+        Alinhamento responsivo - 
+        class text-<tela>-<alinhamento>
+            tela: sm, md, lg, xl
+            alinhamento: left, center, right
+     -->
+    <p class="text-sm-end">tela &gt;= 576px</p><!--Está descrito que qualquer tela que for maior ou igual que 576px terá um alinhamento para a direita-->
+    <p class="text-md-end">tela &gt;= 768px</p><!--Está descrito que qualquer tela que for maior ou igual que 768px terá um alinhamento para a direita-->
+    <p class="text-lg-center">tela &gt;= 992px</p><!--Está descrito que qualquer tela que for maior ou igual que 992px terá um alinhamento para o center-->
+    <p class="text-xl-end">tela &gt;= 1200px</p><!--Está descrito que qualquer tela que for maior ou igual que 1200px terá um alinhamento para a direita-->
+
+    <br>
+    <br> 
+
+    <!-- Elemento Block para inline (A diferença básica entre o inline e block é que o navegador acomoda os elementos de bloco um abaixo do outro e preenche toda a área da tela e os inline à esquerda um ao lado do outro e preenche só o necessário do conteúdo.)-->
+    <h1 class="bg-success d-inline">Lorem ipsum dolor</h1> <!--bg-success: aplica cor de fundo | d-inline: aplica INLINE-->
+    <p class="bg-success d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <br>
+    <br>
+
+    <!-- Elemento Inline para Block -->
+    <span class="bg-success d-block">Lorem ipsum dolor</span><!-- d-block: aplica BLOCK-->
+    <span class="bg-success d-block">Lorem ipsum dolor 2</span>
+
+    <br>
+    <br>
+
+    <!-- Elemento Inline para Inline-Block -->
+    <div class="bg-warning"> <!--warning aplica fundo amarelo-->
+      <!--
+      Elemento inline não é possível aplicar margin-top, block sim;
+      Elemento inline não é possível formatar com style, já o inline-block é possível fazer formatações;
+      -->
+      <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
+      <h3 class="bg-success d-inline-block" style="margin-top: 50px; width: 400px;">Lorem ipsum dolor</h3>
+
+    </div>
+    
+
+
+
+
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>
+

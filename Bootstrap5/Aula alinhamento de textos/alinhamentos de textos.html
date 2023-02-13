@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    
+    <!--Viewport: toda a área visualizável-->
+    <!--"Nosso viewport vai ocupar a largura do dispositivo"-->
+    <!--Initial-scale: Definir escala de zoom padrão-->
+    <!--shrink-to-fit: Encolher para caber-->
+    <!--Tags necessárias para uso do bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <title>Bootstrap - Alinhamento de textos</title>
+
+    <!--Bootstrap CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/estilo.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+
+    <!-- Elementos flutuantes -->
+    <div style="border: 1px solid red;" class="clearfix"> <!--Ao usarmos a class clearfix, os outros conteúdos não invadem a área do conteúdo flutuante-->
+        <div class="bg-success float-start">Float Left</div>
+        <div class="bg-warning float-end">Float Right</div>
+    </div>
+
+    <!-- Posicionamento fixo - top e bottom -->
+    <h1 class="bg-success fixed-bottom">Título do conteúdo fixo</h1> <!--fixed-top: fixamos no topo (Não acompanha o scroll)-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+
+    <!-- 
+        Float responsivo - float-<tela>-<direcao>
+            tela: sm, md, lg, xl
+            alinhamento: start, end
+            obs: comportamento padrão do float todos ficarão um ao lado do outro
+     -->
+    <div class="float-sm-end">tela &gt;= 576px * </div><!--Small-->
+    <div class="float-md-end">tela &gt;=  768px * </div><!--Medium-->
+    <div class="float-lg-end">tela &gt;= 992px * </div><!--Large-->
+    <div class="float-xl-end">tela &gt;= 1200px * </div><!--Extra Large-->
+
+    <br>
+    <br>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+
+    <!-- Colar no topo (sticky) -->
+    <ul class="list-inline bg-warning sticky-top"> <!--Sticky serve para colar o conteúdo SOMENTE QUANDO O CONTEÚDO ENCOSTAR no local indicado-->
+      <li class="list-inline-item">Item 1</li>
+      <li class="list-inline-item">Item 2</li>
+      <li class="list-inline-item">Item 3</li>
+    </ul>
+
+    <h1>Título do conteúdo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+
+    <h1>Título do conteúdo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+
+    <h1>Título do conteúdo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+    
+    <h1>Título do conteúdo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>
+
