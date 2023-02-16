@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - botões</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/estilo.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navegação
+    Tipos de navegação:
+        nav-pills: Transforma a caixa em uma forma diferente e conectada uma com a outra
+        nav-tabs: Cria uma navegação em forma de abas que fica selecionada a atual
+    opções de alinhamento: 
+        justify-content-center: Centraliza as abas
+        justify-content-end: Alinha as abas para a direita
+        flex-column: Coloca a nav em colunas (vertical)
+    -->
+    <h2>Navegação simples / abas</h2>
+    <!--
+      Ao usarmos somente nav, ele transforma o item em inline(um ao lado do outro)
+      Quando colocamos o nav-link nos links, é auto aplicado um margin em volta para espaçar.
+
+    -->
+    <ul class="nav nav-tabs justify-content-center">
+      <li>
+        <a href="#" class="nav-link">Home</a>
+      </li>
+
+      <li>
+        <a href="#" class="nav-link">Sobre</a>
+      </li>
+
+      <li>
+        <a href="#" class="nav-link">Serviços</a>
+      </li>
+    </ul>
+
+    <h2>Barra de navegação simples</h2>
+    <!--
+      Navbar: Usado para indicar que é uma barra de navegação
+      navbar-expand-sm/md/xl/xxl: Classe responsável pela responsividade, transforma em inline (usar na nav) / Os tamanhos server para indicarmos o min de width que a navbar aparecerá, caso for menor que o tamanho escolhido, aparecerá um button para expandir os menus.
+    -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark just"> 
+      <!--Navbar: Usado para indicar que é uma barra de navegação
+    
+      -->
+      <!--Logo-->
+      <!--navbar-brand: Indica que é o Logo-->
+      <a href="#" class="navbar-brand">Chale Hotel</a>
+
+      <!--Navegação
+
+      As of Bootstrap 5 beta, left and right have been replaced by start and end for RTL support. Therefore the margin utilities changed for Bootstrap 5 beta:
+
+        ml-auto => ms-auto (start)
+        mr-auto => me-auto (end) 
+
+      if using bootstrap4, use right & left
+      -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="#" class="nav-link">Sobre</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="#" class="nav-link">Serviços</a>
+        </li>
+      </ul>
+    </nav>
+    
+
+    <h2>Barra de navegação com menu responsivo</h2>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark just"> 
+  
+      <!--Logo-->
+      <a href="#" class="navbar-brand">Chale Hotel</a>
+
+      <!--Menu Hamburguer-->
+      <!--
+        data-toggle: Serve para animar a abertura de menus no botão
+        navbag-toggler: serve para indicarmos o icone junto com o navbar-toggler-icon no span abaixo do button
+      -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--Navegação-->
+      <!--
+        Data-target: o que quer mostrar quando clicar (abaixo)
+        Para indicarmos para o data-target, usamos ID na seção/dic, e vinculamos entre eles o mesmo ID, lembrando que no data-target devemos uzar "#"" no inicio
+        Collapse: indica que aparecerá só depois de clicarmos.
+        navbar-collapse: Fixa o botão ao clicarmos.
+      -->
+      <div class="collapse navbar-collapse" id="nav-target">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+    
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sobre</a>
+          </li>
+    
+          <li class="nav-item">
+            <a href="#" class="nav-link">Serviços</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h2>Barra de navegação com formulário</h2>
+    
+    <nav class="navbar navbar-expand navbar-dark bg-dark just"> 
+
+      <a href="#" class="navbar-brand">Chale Hotel</a>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="#" class="nav-link">Sobre</a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="#" class="nav-link">Serviços</a>
+        </li>
+      </ul>
+
+      <!--Formulário
+        
+      -->
+
+      <form class="form-inline">
+        <input type="text" class="form-control" placeholder="pesquisar...">
+        <button class="btn btn-outline-success">Ok</button>
+      </form>
+
+    </nav>
+    
+    
+    
+    <h2>Barra de navegação com menu dropdown</h2>
+    
+    
+    <!--Cores
+    opções: bg-primary, bg-secondary, bg-success, bg-info,
+    bg-warning, bg-danger, bg-light, bg-dark
+    -->
+    <h2>Cores</h2>
+    
+
+    <!--Alinhamentos
+    opções: fixed-top, fixed-bottom, sticky
+    -->
+    <h2>Alinhamentos</h2>
+    
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
